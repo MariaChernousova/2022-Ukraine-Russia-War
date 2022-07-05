@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9951FB62874D97A001A80B7 /* DataManagerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FB52874D97A001A80B7 /* DataManagerContext.swift */; };
+		A9951FB82874D9C1001A80B7 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FB72874D9C1001A80B7 /* DataLoader.swift */; };
+		A9951FBA2874D9D1001A80B7 /* DataLoaderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FB92874D9D1001A80B7 /* DataLoaderContext.swift */; };
+		A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBB2874DA04001A80B7 /* DataParser.swift */; };
+		A9951FBE2874DA12001A80B7 /* DataParserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBD2874DA12001A80B7 /* DataParserContext.swift */; };
+		A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC02874DCC9001A80B7 /* AppError.swift */; };
+		A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295728732BE3007D438D /* AppDelegate.swift */; };
+		A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295928732BE3007D438D /* SceneDelegate.swift */; };
+		A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295B28732BE3007D438D /* MainViewController.swift */; };
+		A9D5296128732BE4007D438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D5296028732BE4007D438D /* Assets.xcassets */; };
+		A9D5296428732BE4007D438D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D5296228732BE4007D438D /* LaunchScreen.storyboard */; };
+		A9D5296C28733060007D438D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5296B28733060007D438D /* AppCoordinator.swift */; };
+		A9D5297228736567007D438D /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = A9D5297028736567007D438D /* russia_losses_personnel.json */; };
+		A9D5297328736567007D438D /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = A9D5297128736567007D438D /* russia_losses_equipment.json */; };
+		A9D52975287365BF007D438D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D52974287365BF007D438D /* Coordinator.swift */; };
+		A9D5297728736662007D438D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5297628736662007D438D /* MainViewModel.swift */; };
+		A9D529792873666C007D438D /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D529782873666C007D438D /* MainModel.swift */; };
+		A9D5297B2873667A007D438D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5297A2873667A007D438D /* MainCoordinator.swift */; };
+		A9D5297F2873795B007D438D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5297E2873795B007D438D /* ServiceManager.swift */; };
+		A9D5298128737977007D438D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5298028737977007D438D /* ServiceLocator.swift */; };
+		A9D52985287382A9007D438D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D52984287382A9007D438D /* DataManager.swift */; };
+		A9D52987287383A5007D438D /* Personnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D52986287383A5007D438D /* Personnel.swift */; };
+		A9D529892873840E007D438D /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D529882873840E007D438D /* Equipment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9951FB52874D97A001A80B7 /* DataManagerContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerContext.swift; sourceTree = "<group>"; };
+		A9951FB72874D9C1001A80B7 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		A9951FB92874D9D1001A80B7 /* DataLoaderContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderContext.swift; sourceTree = "<group>"; };
+		A9951FBB2874DA04001A80B7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		A9951FBD2874DA12001A80B7 /* DataParserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserContext.swift; sourceTree = "<group>"; };
+		A9951FC02874DCC9001A80B7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A9D5295428732BE3007D438D /* Ukraine-Russia-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ukraine-Russia-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D5295728732BE3007D438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9D5295928732BE3007D438D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9D5295B28732BE3007D438D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A9D5296028732BE4007D438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9D5296328732BE4007D438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9D5296528732BE4007D438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D5296B28733060007D438D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A9D5297028736567007D438D /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = russia_losses_personnel.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		A9D5297128736567007D438D /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = russia_losses_equipment.json; sourceTree = "<group>"; };
+		A9D52974287365BF007D438D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A9D5297628736662007D438D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A9D529782873666C007D438D /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		A9D5297A2873667A007D438D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A9D5297E2873795B007D438D /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		A9D5298028737977007D438D /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		A9D52984287382A9007D438D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A9D52986287383A5007D438D /* Personnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personnel.swift; sourceTree = "<group>"; };
+		A9D529882873840E007D438D /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D5295128732BE3007D438D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9951FB22874D920001A80B7 /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FB72874D9C1001A80B7 /* DataLoader.swift */,
+				A9951FB92874D9D1001A80B7 /* DataLoaderContext.swift */,
+			);
+			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		A9951FB32874D937001A80B7 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FBB2874DA04001A80B7 /* DataParser.swift */,
+				A9951FBD2874DA12001A80B7 /* DataParserContext.swift */,
+			);
+			path = DataParser;
+			sourceTree = "<group>";
+		};
+		A9951FB42874D949001A80B7 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				A9D529882873840E007D438D /* Equipment.swift */,
+				A9D52986287383A5007D438D /* Personnel.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		A9951FBF2874DCBD001A80B7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FC02874DCC9001A80B7 /* AppError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A9D5294B28732BE3007D438D = {
+			isa = PBXGroup;
+			children = (
+				A9D5295628732BE3007D438D /* Ukraine-Russia-War */,
+				A9D5295528732BE3007D438D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D5295528732BE3007D438D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5295428732BE3007D438D /* Ukraine-Russia-War.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D5295628732BE3007D438D /* Ukraine-Russia-War */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FBF2874DCBD001A80B7 /* Shared */,
+				A9D5297D2873671B007D438D /* Services */,
+				A9D5297C28736688007D438D /* MainScreen */,
+				A9D5296F28736567007D438D /* Data */,
+				A9D5295728732BE3007D438D /* AppDelegate.swift */,
+				A9D5295928732BE3007D438D /* SceneDelegate.swift */,
+				A9D5296B28733060007D438D /* AppCoordinator.swift */,
+				A9D52974287365BF007D438D /* Coordinator.swift */,
+				A9D5296028732BE4007D438D /* Assets.xcassets */,
+				A9D5296228732BE4007D438D /* LaunchScreen.storyboard */,
+				A9D5296528732BE4007D438D /* Info.plist */,
+			);
+			path = "Ukraine-Russia-War";
+			sourceTree = "<group>";
+		};
+		A9D5296F28736567007D438D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5297028736567007D438D /* russia_losses_personnel.json */,
+				A9D5297128736567007D438D /* russia_losses_equipment.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A9D5297C28736688007D438D /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5295B28732BE3007D438D /* MainViewController.swift */,
+				A9D5297628736662007D438D /* MainViewModel.swift */,
+				A9D529782873666C007D438D /* MainModel.swift */,
+				A9D5297A2873667A007D438D /* MainCoordinator.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		A9D5297D2873671B007D438D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FB32874D937001A80B7 /* DataParser */,
+				A9951FB22874D920001A80B7 /* DataLoader */,
+				A9D5298328737E38007D438D /* DataManager */,
+				A9D5298228737E28007D438D /* ServiceLocator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A9D5298228737E28007D438D /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5297E2873795B007D438D /* ServiceManager.swift */,
+				A9D5298028737977007D438D /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		A9D5298328737E38007D438D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FB42874D949001A80B7 /* DTOs */,
+				A9D52984287382A9007D438D /* DataManager.swift */,
+				A9951FB52874D97A001A80B7 /* DataManagerContext.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D5295328732BE3007D438D /* Ukraine-Russia-War */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D5296828732BE4007D438D /* Build configuration list for PBXNativeTarget "Ukraine-Russia-War" */;
+			buildPhases = (
+				A9D5295028732BE3007D438D /* Sources */,
+				A9D5295128732BE3007D438D /* Frameworks */,
+				A9D5295228732BE3007D438D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ukraine-Russia-War";
+			productName = "Ukraine-Russia-War";
+			productReference = A9D5295428732BE3007D438D /* Ukraine-Russia-War.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D5294C28732BE3007D438D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A9D5295328732BE3007D438D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A9D5294F28732BE3007D438D /* Build configuration list for PBXProject "Ukraine-Russia-War" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9D5294B28732BE3007D438D;
+			productRefGroup = A9D5295528732BE3007D438D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D5295328732BE3007D438D /* Ukraine-Russia-War */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D5295228732BE3007D438D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D5297228736567007D438D /* russia_losses_personnel.json in Resources */,
+				A9D5297328736567007D438D /* russia_losses_equipment.json in Resources */,
+				A9D5296428732BE4007D438D /* LaunchScreen.storyboard in Resources */,
+				A9D5296128732BE4007D438D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D5295028732BE3007D438D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D5296C28733060007D438D /* AppCoordinator.swift in Sources */,
+				A9951FB62874D97A001A80B7 /* DataManagerContext.swift in Sources */,
+				A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */,
+				A9D5297B2873667A007D438D /* MainCoordinator.swift in Sources */,
+				A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */,
+				A9D52975287365BF007D438D /* Coordinator.swift in Sources */,
+				A9951FB82874D9C1001A80B7 /* DataLoader.swift in Sources */,
+				A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */,
+				A9D529792873666C007D438D /* MainModel.swift in Sources */,
+				A9951FBE2874DA12001A80B7 /* DataParserContext.swift in Sources */,
+				A9D5297F2873795B007D438D /* ServiceManager.swift in Sources */,
+				A9951FBA2874D9D1001A80B7 /* DataLoaderContext.swift in Sources */,
+				A9D529892873840E007D438D /* Equipment.swift in Sources */,
+				A9D5298128737977007D438D /* ServiceLocator.swift in Sources */,
+				A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */,
+				A9D52987287383A5007D438D /* Personnel.swift in Sources */,
+				A9D52985287382A9007D438D /* DataManager.swift in Sources */,
+				A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */,
+				A9D5297728736662007D438D /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9D5296228732BE4007D438D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D5296328732BE4007D438D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9D5296628732BE4007D438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9D5296728732BE4007D438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9D5296928732BE4007D438D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ukraine-Russia-War/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maryc.native.Ukraine-Russia-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9D5296A28732BE4007D438D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ukraine-Russia-War/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maryc.native.Ukraine-Russia-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9D5294F28732BE3007D438D /* Build configuration list for PBXProject "Ukraine-Russia-War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D5296628732BE4007D438D /* Debug */,
+				A9D5296728732BE4007D438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D5296828732BE4007D438D /* Build configuration list for PBXNativeTarget "Ukraine-Russia-War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D5296928732BE4007D438D /* Debug */,
+				A9D5296A28732BE4007D438D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9D5294C28732BE3007D438D /* Project object */;
+}
