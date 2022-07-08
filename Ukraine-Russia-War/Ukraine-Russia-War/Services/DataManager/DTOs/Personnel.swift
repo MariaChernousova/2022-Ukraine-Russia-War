@@ -7,15 +7,32 @@
 
 import Foundation
 
-struct Personnel: Codable {
-    let date: String
+struct Personnel: Codable, Hashable {
+    
+    private static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        return formatter
+    }()
+    
+    enum CodingKeys: String, CodingKey {
+        case prisonerOfWar = "POW"
+        case date, day, personnel
+    }
+    
+    let date: Date
     let day: Int
     let personnel: Int
     let prisonerOfWar: Int
     
-    enum CodingKeys: String, CodingKey {
-        case prisonerOfWar = "POW"
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        case date, day, personnel
+        let date = try container.decode(String.self, forKey: .date)
+        self.date = Personnel.dateFormatter.date(from: date) ?? Date()
+        self.day = try container.decode(Int.self, forKey: .day)
+        self.personnel = try container.decode(Int.self, forKey: .personnel)
+        self.prisonerOfWar = try container.decode(Int.self, forKey: .prisonerOfWar)
     }
 }

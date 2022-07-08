@@ -21,9 +21,10 @@ class DataManager: DataManagerContext {
         if let data = dataLoader.loadData(for: "russia_losses_personnel") {
             if let parsedData = dataParser.parse(from: data, of: Personnel.self) {
                 completionHandler(.success(parsedData))
+            } else {
+                completionHandler(.failure(.dataNotFound))
             }
         }
-        completionHandler(.failure(.dataNotFound))
     }
     
     func getEquipmentData(completionHandler: @escaping ((Result<[Equipment], AppError>) -> Void)) {

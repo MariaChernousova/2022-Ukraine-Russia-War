@@ -13,6 +13,16 @@
 		A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBB2874DA04001A80B7 /* DataParser.swift */; };
 		A9951FBE2874DA12001A80B7 /* DataParserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBD2874DA12001A80B7 /* DataParserContext.swift */; };
 		A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC02874DCC9001A80B7 /* AppError.swift */; };
+		A9951FC32875BA3B001A80B7 /* OverallResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC22875BA3B001A80B7 /* OverallResult.swift */; };
+		A9951FC52875DD31001A80B7 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC42875DD31001A80B7 /* GridCell.swift */; };
+		A9951FC82875DDA0001A80B7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC72875DDA0001A80B7 /* HeaderView.swift */; };
+		A9951FCB28760E29001A80B7 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */; };
+		A9951FCD287757F5001A80B7 /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FCC287757F5001A80B7 /* MainSection.swift */; };
+		A9951FCF28785621001A80B7 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FCE28785621001A80B7 /* Date+Extensions.swift */; };
+		A9951FD22878B31E001A80B7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD12878B31E001A80B7 /* DetailsViewController.swift */; };
+		A9951FD42878B32F001A80B7 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */; };
+		A9951FD62878B339001A80B7 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD52878B339001A80B7 /* DetailsModel.swift */; };
+		A9951FD82878B345001A80B7 /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD72878B345001A80B7 /* DetailsCoordinator.swift */; };
 		A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295728732BE3007D438D /* AppDelegate.swift */; };
 		A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295928732BE3007D438D /* SceneDelegate.swift */; };
 		A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295B28732BE3007D438D /* MainViewController.swift */; };
@@ -39,6 +49,16 @@
 		A9951FBB2874DA04001A80B7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		A9951FBD2874DA12001A80B7 /* DataParserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserContext.swift; sourceTree = "<group>"; };
 		A9951FC02874DCC9001A80B7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A9951FC22875BA3B001A80B7 /* OverallResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallResult.swift; sourceTree = "<group>"; };
+		A9951FC42875DD31001A80B7 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		A9951FC72875DDA0001A80B7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		A9951FCC287757F5001A80B7 /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		A9951FCE28785621001A80B7 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A9951FD12878B31E001A80B7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		A9951FD52878B339001A80B7 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		A9951FD72878B345001A80B7 /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
 		A9D5295428732BE3007D438D /* Ukraine-Russia-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ukraine-Russia-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D5295728732BE3007D438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D5295928732BE3007D438D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +114,7 @@
 			children = (
 				A9D529882873840E007D438D /* Equipment.swift */,
 				A9D52986287383A5007D438D /* Personnel.swift */,
+				A9951FC22875BA3B001A80B7 /* OverallResult.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -104,6 +125,43 @@
 				A9951FC02874DCC9001A80B7 /* AppError.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		A9951FC62875DD81001A80B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FC42875DD31001A80B7 /* GridCell.swift */,
+				A9951FC72875DDA0001A80B7 /* HeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A9951FC928760E01001A80B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */,
+				A9951FCE28785621001A80B7 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9951FD02878B2FA001A80B7 /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FD12878B31E001A80B7 /* DetailsViewController.swift */,
+				A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */,
+				A9951FD52878B339001A80B7 /* DetailsModel.swift */,
+				A9951FD72878B345001A80B7 /* DetailsCoordinator.swift */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		A9951FD92878DE26001A80B7 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FCC287757F5001A80B7 /* MainSection.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 		A9D5294B28732BE3007D438D = {
@@ -125,8 +183,10 @@
 		A9D5295628732BE3007D438D /* Ukraine-Russia-War */ = {
 			isa = PBXGroup;
 			children = (
+				A9951FC928760E01001A80B7 /* Extensions */,
 				A9951FBF2874DCBD001A80B7 /* Shared */,
 				A9D5297D2873671B007D438D /* Services */,
+				A9951FD02878B2FA001A80B7 /* DetailsScreen */,
 				A9D5297C28736688007D438D /* MainScreen */,
 				A9D5296F28736567007D438D /* Data */,
 				A9D5295728732BE3007D438D /* AppDelegate.swift */,
@@ -152,6 +212,8 @@
 		A9D5297C28736688007D438D /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A9951FD92878DE26001A80B7 /* Sections */,
+				A9951FC62875DD81001A80B7 /* Components */,
 				A9D5295B28732BE3007D438D /* MainViewController.swift */,
 				A9D5297628736662007D438D /* MainViewModel.swift */,
 				A9D529782873666C007D438D /* MainModel.swift */,
@@ -266,10 +328,16 @@
 				A9951FB62874D97A001A80B7 /* DataManagerContext.swift in Sources */,
 				A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */,
 				A9D5297B2873667A007D438D /* MainCoordinator.swift in Sources */,
+				A9951FD62878B339001A80B7 /* DetailsModel.swift in Sources */,
+				A9951FCB28760E29001A80B7 /* NSObject+Extensions.swift in Sources */,
+				A9951FD82878B345001A80B7 /* DetailsCoordinator.swift in Sources */,
 				A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */,
 				A9D52975287365BF007D438D /* Coordinator.swift in Sources */,
+				A9951FC32875BA3B001A80B7 /* OverallResult.swift in Sources */,
+				A9951FC82875DDA0001A80B7 /* HeaderView.swift in Sources */,
 				A9951FB82874D9C1001A80B7 /* DataLoader.swift in Sources */,
 				A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */,
+				A9951FD22878B31E001A80B7 /* DetailsViewController.swift in Sources */,
 				A9D529792873666C007D438D /* MainModel.swift in Sources */,
 				A9951FBE2874DA12001A80B7 /* DataParserContext.swift in Sources */,
 				A9D5297F2873795B007D438D /* ServiceManager.swift in Sources */,
@@ -277,10 +345,14 @@
 				A9D529892873840E007D438D /* Equipment.swift in Sources */,
 				A9D5298128737977007D438D /* ServiceLocator.swift in Sources */,
 				A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */,
+				A9951FCF28785621001A80B7 /* Date+Extensions.swift in Sources */,
 				A9D52987287383A5007D438D /* Personnel.swift in Sources */,
+				A9951FC52875DD31001A80B7 /* GridCell.swift in Sources */,
 				A9D52985287382A9007D438D /* DataManager.swift in Sources */,
 				A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */,
+				A9951FCD287757F5001A80B7 /* MainSection.swift in Sources */,
 				A9D5297728736662007D438D /* MainViewModel.swift in Sources */,
+				A9951FD42878B32F001A80B7 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

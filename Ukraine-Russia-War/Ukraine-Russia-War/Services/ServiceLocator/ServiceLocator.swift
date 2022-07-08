@@ -26,4 +26,15 @@ class ServiceLocator {
 
 extension ServiceLocator: ServiceManager {
     
+    private enum Const {
+        static let errorMessage = "'%@' cannot be resolved"
+    }
+    
+    var dataManager: DataManagerContext {
+        guard let dataManager: DataManagerContext = resolve() else {
+            fatalError(.init(format: Const.errorMessage,
+                             arguments: [String(describing: DataManagerContext.self)]))
+        }
+        return dataManager
+    }
 }

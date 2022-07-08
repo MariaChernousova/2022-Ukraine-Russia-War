@@ -8,6 +8,5 @@
 import Foundation
 
 protocol ServiceManager {
-
-//    var dataManager: DataManagerContext { get }
+    var dataManager: DataManagerContext { get }
 }

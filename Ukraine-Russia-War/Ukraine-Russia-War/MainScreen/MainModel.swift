@@ -8,14 +8,18 @@
 import Foundation
 
 protocol MainModelProvider {
-    
+    func getPersonnelData(completionHandler: @escaping ((Result<[Personnel], AppError>) -> Void))
 }
 
 class MainModel: MainModelProvider {
     
-    private let serviceManager: ServiceManager
+    private let dataManager: DataManagerContext
     
     init(serviceManager: ServiceManager) {
-        self.serviceManager = serviceManager
+        self.dataManager = serviceManager.dataManager
+    }
+    
+    func getPersonnelData(completionHandler: @escaping ((Result<[Personnel], AppError>) -> Void)) {
+        dataManager.getPersonnelData(completionHandler: completionHandler)
     }
 }

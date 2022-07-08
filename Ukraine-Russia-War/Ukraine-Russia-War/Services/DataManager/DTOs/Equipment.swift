@@ -9,6 +9,13 @@ import Foundation
 
 struct Equipment: Codable {
     
+    private static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        return formatter
+    }()
+    
     enum CodingKeys: String, CodingKey {
         case armoredPersonnelCarrier = "APC"
         case fieldArtillery = "field artillery"
@@ -23,7 +30,7 @@ struct Equipment: Codable {
         case date, day, aircraft, helicopter, tank, drone
     }
     
-    let date: String
+    let date: Date
     let day: Int
     let aircraft: Int?
     let helicopter: Int?
@@ -43,13 +50,14 @@ struct Equipment: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         var dayValue: Int = 0
         
-        if let value = try? container.decode(Int.self, forKey: .day) {
-            dayValue = value
-        } else if let value = try? container.decode(String.self, forKey: .day) {
-            dayValue = Int(value) ?? 0
+        if let day = try? container.decode(Int.self, forKey: .day) {
+            dayValue = day
+        } else if let day = try? container.decode(String.self, forKey: .day) {
+            dayValue = Int(day) ?? 0
         }
         
-        self.date = try container.decode(String.self, forKey: .date)
+        let date = try container.decode(String.self, forKey: .date)
+        self.date = Equipment.dateFormatter.date(from: date) ?? Date()
         self.day = dayValue
         self.aircraft = try? container.decode(Int.self, forKey: .aircraft)
         self.helicopter = try? container.decode(Int.self, forKey: .helicopter)
