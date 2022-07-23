@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Personnel: Codable, Hashable {
+struct Personnel: Decodable, Hashable {
     
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -23,8 +23,7 @@ struct Personnel: Codable, Hashable {
     
     let date: Date
     let day: Int
-    let personnel: Int
-    let prisonerOfWar: Int
+    let losses: [PersonnelLoss]
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -32,7 +31,12 @@ struct Personnel: Codable, Hashable {
         let date = try container.decode(String.self, forKey: .date)
         self.date = Personnel.dateFormatter.date(from: date) ?? Date()
         self.day = try container.decode(Int.self, forKey: .day)
-        self.personnel = try container.decode(Int.self, forKey: .personnel)
-        self.prisonerOfWar = try container.decode(Int.self, forKey: .prisonerOfWar)
+        
+        let personnelAmount = try container.decode(Int.self, forKey: .personnel)
+        let prisonerOfWarAmount = try container.decode(Int.self, forKey: .prisonerOfWar)
+        losses = [
+            PersonnelLoss(amount: personnelAmount, kind: .personnel),
+            PersonnelLoss(amount: prisonerOfWarAmount, kind: .prisonerOfWar)
+        ]
     }
 }

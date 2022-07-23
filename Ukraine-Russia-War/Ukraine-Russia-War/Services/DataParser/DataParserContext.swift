@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DataParserContext {
-    func parse<T:Codable>(from jsonData: Data, of type: T.Type) -> [T]?
+    func parse<T: Decodable>(from jsonData: Data, of type: T.Type) -> [T]?
 }

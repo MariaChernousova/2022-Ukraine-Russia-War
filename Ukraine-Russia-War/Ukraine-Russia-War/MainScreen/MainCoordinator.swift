@@ -9,7 +9,7 @@ import UIKit
 
 class MainCoordinator: Coordinator {
     enum Path {
-        case description(Personnel)
+        case description(ComparableLoss<Personnel>)
     }
     
     let serviceManager: ServiceManager
@@ -24,8 +24,8 @@ class MainCoordinator: Coordinator {
         let model = MainModel(serviceManager: serviceManager)
         let viewModel = MainViewModel(model: model) { path in
             switch path {
-            case .description(let personnel):
-                self.startDescriptionFlow(with: personnel)
+            case .description(let comparableLoss):
+                self.startDescriptionFlow(with: comparableLoss)
             }
         }
         let viewController = MainViewController(viewModel: viewModel)
@@ -33,7 +33,7 @@ class MainCoordinator: Coordinator {
         rootViewController.pushViewController(viewController, animated: true)
     }
     
-    private func startDescriptionFlow(with personnel: Personnel) {
-        DetailsCoordinator(serviceManager: serviceManager, rootViewController: rootViewController, personnel: personnel).start()
+    private func startDescriptionFlow(with comparableLoss: ComparableLoss<Personnel>) {
+        DetailsCoordinator(serviceManager: serviceManager, rootViewController: rootViewController, comparableLoss: comparableLoss).start()
     }
 }

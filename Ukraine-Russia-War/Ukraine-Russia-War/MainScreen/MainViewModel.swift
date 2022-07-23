@@ -23,6 +23,7 @@ class MainViewModel: MainViewModelProvider {
     private let model: MainModelProvider
     private let pathHandler: PathHandler
     
+    private var personnels: [Personnel] = []
     private var sections: [MainSection] = []
     
     var updateAction: ([MainSection]) -> Void = { _ in }
@@ -39,6 +40,7 @@ class MainViewModel: MainViewModelProvider {
             guard let self = self else { return }
             switch result {
             case .success(let personnelData):
+                self.personnels = personnelData
                 self.configureSection(with: personnelData)
                 self.updateAction(self.sections)
             case .failure(let error):
@@ -55,7 +57,18 @@ class MainViewModel: MainViewModelProvider {
     }
     
     func select(personnel: Personnel) {
-        pathHandler(.description(personnel))
+        guard let currentDayIndex = personnels.firstIndex(of: personnel) else {
+            return
+        }
+        if currentDayIndex == .zero {
+            let comparableLoss = ComparableLoss(current: personnel, previous: personnel)
+            pathHandler(.description(comparableLoss))
+        } else {
+            let previousDayPersonnel = personnels[currentDayIndex - 1]
+            let comparableLoss = ComparableLoss(current: personnel, previous: previousDayPersonnel)
+            pathHandler(.description(comparableLoss))
+        }
+        
     }
     
     // MARK: - Private methods.

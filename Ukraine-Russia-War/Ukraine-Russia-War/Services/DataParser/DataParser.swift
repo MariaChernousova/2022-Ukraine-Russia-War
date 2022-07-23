@@ -8,7 +8,8 @@
 import Foundation
 
 class DataParser: DataParserContext {
-    func parse<T:Codable>(from jsonData: Data, of type: T.Type) -> [T]? {
+    
+    func parse<T: Decodable>(from jsonData: Data, of type: T.Type) -> [T]? {
         do {
             let decodedData = try JSONDecoder().decode([T].self, from: jsonData)
             return decodedData

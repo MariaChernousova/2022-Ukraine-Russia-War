@@ -9,8 +9,13 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    typealias DataSource = UICollectionViewDiffableDataSource<MainSection, Personnel>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<MainSection, Personnel>
+    private typealias CollectionViewDataSource = UICollectionViewDiffableDataSource<MainSection, Personnel>
+    private typealias CollectionViewSnapshot = NSDiffableDataSourceSnapshot<MainSection, Personnel>
+    
+    private enum Constant {
+        static let title = "Date selection"
+        static let alertTitile = "OK"
+    }
     
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero,
@@ -18,7 +23,7 @@ class MainViewController: UIViewController {
         return collectionView
     }()
     
-    private lazy var dataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, personnel in
+    private lazy var dataSource = CollectionViewDataSource(collectionView: collectionView) { collectionView, indexPath, personnel in
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridCell.identifier, for: indexPath) as? GridCell else { return nil }
         cell.configure(with: self.viewModel.formatDate(personnel.date),
                        personnel.day)
@@ -42,11 +47,17 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .mainBackgroundColor
         commonInit()
         bind()
         
         viewModel.didLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = UIColor.mainBackgroundColor
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.mainTextColor]
     }
     
     private func commonInit() {
@@ -58,7 +69,7 @@ class MainViewController: UIViewController {
         
         viewModel.updateAction = { [weak dataSource] sections in
             guard let dataSource = dataSource else { return }
-            var snapshot = Snapshot()
+            var snapshot = CollectionViewSnapshot()
             snapshot.appendSections(sections.reversed())
             for section in sections.reversed() {
                 snapshot.appendItems(section.data, toSection: section)
@@ -74,12 +85,13 @@ class MainViewController: UIViewController {
     private func setupSubviews() {
         view.addSubview(collectionView)
         
-        navigationItem.title = "Main"
+        navigationItem.title = Constant.title
         
         collectionView.register(GridCell.self, forCellWithReuseIdentifier: GridCell.identifier)
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderView.identifier)
         
         collectionView.dataSource = dataSource
+        collectionView.backgroundColor = .mainBackgroundColor
         dataSource.supplementaryViewProvider = provideSupplementaryView
     }
     
@@ -139,7 +151,7 @@ class MainViewController: UIViewController {
 
     
     private func showAlert(title: String, message: String) {
-        let action = UIAlertAction(title: "OK",
+        let action = UIAlertAction(title: Constant.alertTitile,
                                    style: .cancel)
         let alertController = UIAlertController(title: title,
                                                 message: message,

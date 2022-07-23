@@ -13,7 +13,6 @@
 		A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBB2874DA04001A80B7 /* DataParser.swift */; };
 		A9951FBE2874DA12001A80B7 /* DataParserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FBD2874DA12001A80B7 /* DataParserContext.swift */; };
 		A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC02874DCC9001A80B7 /* AppError.swift */; };
-		A9951FC32875BA3B001A80B7 /* OverallResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC22875BA3B001A80B7 /* OverallResult.swift */; };
 		A9951FC52875DD31001A80B7 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC42875DD31001A80B7 /* GridCell.swift */; };
 		A9951FC82875DDA0001A80B7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FC72875DDA0001A80B7 /* HeaderView.swift */; };
 		A9951FCB28760E29001A80B7 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */; };
@@ -23,6 +22,13 @@
 		A9951FD42878B32F001A80B7 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */; };
 		A9951FD62878B339001A80B7 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD52878B339001A80B7 /* DetailsModel.swift */; };
 		A9951FD82878B345001A80B7 /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FD72878B345001A80B7 /* DetailsCoordinator.swift */; };
+		A9951FE0287C8139001A80B7 /* DateDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FDF287C8139001A80B7 /* DateDetailsCell.swift */; };
+		A9951FE2287C815B001A80B7 /* MilitaryDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FE1287C815B001A80B7 /* MilitaryDetailsCell.swift */; };
+		A9951FE7287F6086001A80B7 /* DetailsDateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9951FE6287F6086001A80B7 /* DetailsDateAdapter.swift */; };
+		A995200828804FBA001A80B7 /* DetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A995200728804FBA001A80B7 /* DetailsDataSource.swift */; };
+		A9A6161A288348A200D453A8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A61619288348A200D453A8 /* UIColor+Extensions.swift */; };
+		A9A6161C28834E3700D453A8 /* ComparableLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6161B28834E3700D453A8 /* ComparableLoss.swift */; };
+		A9A6161E2883550000D453A8 /* PersonnelLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6161D2883550000D453A8 /* PersonnelLoss.swift */; };
 		A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295728732BE3007D438D /* AppDelegate.swift */; };
 		A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295928732BE3007D438D /* SceneDelegate.swift */; };
 		A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D5295B28732BE3007D438D /* MainViewController.swift */; };
@@ -40,6 +46,7 @@
 		A9D52985287382A9007D438D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D52984287382A9007D438D /* DataManager.swift */; };
 		A9D52987287383A5007D438D /* Personnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D52986287383A5007D438D /* Personnel.swift */; };
 		A9D529892873840E007D438D /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D529882873840E007D438D /* Equipment.swift */; };
+		E91389CA2880B57B00DC80B3 /* EquipmentLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91389C92880B57B00DC80B3 /* EquipmentLoss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +56,6 @@
 		A9951FBB2874DA04001A80B7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		A9951FBD2874DA12001A80B7 /* DataParserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserContext.swift; sourceTree = "<group>"; };
 		A9951FC02874DCC9001A80B7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
-		A9951FC22875BA3B001A80B7 /* OverallResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallResult.swift; sourceTree = "<group>"; };
 		A9951FC42875DD31001A80B7 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		A9951FC72875DDA0001A80B7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
@@ -59,6 +65,13 @@
 		A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		A9951FD52878B339001A80B7 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
 		A9951FD72878B345001A80B7 /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
+		A9951FDF287C8139001A80B7 /* DateDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDetailsCell.swift; sourceTree = "<group>"; };
+		A9951FE1287C815B001A80B7 /* MilitaryDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryDetailsCell.swift; sourceTree = "<group>"; };
+		A9951FE6287F6086001A80B7 /* DetailsDateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDateAdapter.swift; sourceTree = "<group>"; };
+		A995200728804FBA001A80B7 /* DetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataSource.swift; sourceTree = "<group>"; };
+		A9A61619288348A200D453A8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		A9A6161B28834E3700D453A8 /* ComparableLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableLoss.swift; sourceTree = "<group>"; };
+		A9A6161D2883550000D453A8 /* PersonnelLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLoss.swift; sourceTree = "<group>"; };
 		A9D5295428732BE3007D438D /* Ukraine-Russia-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ukraine-Russia-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D5295728732BE3007D438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D5295928732BE3007D438D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +91,7 @@
 		A9D52984287382A9007D438D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A9D52986287383A5007D438D /* Personnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personnel.swift; sourceTree = "<group>"; };
 		A9D529882873840E007D438D /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		E91389C92880B57B00DC80B3 /* EquipmentLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLoss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +123,6 @@
 			path = DataParser;
 			sourceTree = "<group>";
 		};
-		A9951FB42874D949001A80B7 /* DTOs */ = {
-			isa = PBXGroup;
-			children = (
-				A9D529882873840E007D438D /* Equipment.swift */,
-				A9D52986287383A5007D438D /* Personnel.swift */,
-				A9951FC22875BA3B001A80B7 /* OverallResult.swift */,
-			);
-			path = DTOs;
-			sourceTree = "<group>";
-		};
 		A9951FBF2874DCBD001A80B7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +145,7 @@
 			children = (
 				A9951FCA28760E29001A80B7 /* NSObject+Extensions.swift */,
 				A9951FCE28785621001A80B7 /* Date+Extensions.swift */,
+				A9A61619288348A200D453A8 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +153,9 @@
 		A9951FD02878B2FA001A80B7 /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A9A6161F288B0E4100D453A8 /* DataSource */,
+				A9951FE3287F5F19001A80B7 /* Adapters */,
+				A9951FDC287C7627001A80B7 /* Components */,
 				A9951FD12878B31E001A80B7 /* DetailsViewController.swift */,
 				A9951FD32878B32F001A80B7 /* DetailsViewModel.swift */,
 				A9951FD52878B339001A80B7 /* DetailsModel.swift */,
@@ -162,6 +170,31 @@
 				A9951FCC287757F5001A80B7 /* MainSection.swift */,
 			);
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		A9951FDC287C7627001A80B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FDF287C8139001A80B7 /* DateDetailsCell.swift */,
+				A9951FE1287C815B001A80B7 /* MilitaryDetailsCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A9951FE3287F5F19001A80B7 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				A9951FE6287F6086001A80B7 /* DetailsDateAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		A9A6161F288B0E4100D453A8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A995200728804FBA001A80B7 /* DetailsDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		A9D5294B28732BE3007D438D = {
@@ -183,12 +216,13 @@
 		A9D5295628732BE3007D438D /* Ukraine-Russia-War */ = {
 			isa = PBXGroup;
 			children = (
+				E91389C82880B55000DC80B3 /* Models */,
 				A9951FC928760E01001A80B7 /* Extensions */,
 				A9951FBF2874DCBD001A80B7 /* Shared */,
 				A9D5297D2873671B007D438D /* Services */,
 				A9951FD02878B2FA001A80B7 /* DetailsScreen */,
 				A9D5297C28736688007D438D /* MainScreen */,
-				A9D5296F28736567007D438D /* Data */,
+				A9D5296F28736567007D438D /* Resources */,
 				A9D5295728732BE3007D438D /* AppDelegate.swift */,
 				A9D5295928732BE3007D438D /* SceneDelegate.swift */,
 				A9D5296B28733060007D438D /* AppCoordinator.swift */,
@@ -200,13 +234,13 @@
 			path = "Ukraine-Russia-War";
 			sourceTree = "<group>";
 		};
-		A9D5296F28736567007D438D /* Data */ = {
+		A9D5296F28736567007D438D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				A9D5297028736567007D438D /* russia_losses_personnel.json */,
 				A9D5297128736567007D438D /* russia_losses_equipment.json */,
 			);
-			path = Data;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A9D5297C28736688007D438D /* MainScreen */ = {
@@ -245,11 +279,30 @@
 		A9D5298328737E38007D438D /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				A9951FB42874D949001A80B7 /* DTOs */,
 				A9D52984287382A9007D438D /* DataManager.swift */,
 				A9951FB52874D97A001A80B7 /* DataManagerContext.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E91389C82880B55000DC80B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E91389C92880B57B00DC80B3 /* EquipmentLoss.swift */,
+				E91389CB2880B5B100DC80B3 /* DTOs */,
+				A9A6161B28834E3700D453A8 /* ComparableLoss.swift */,
+				A9A6161D2883550000D453A8 /* PersonnelLoss.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E91389CB2880B5B100DC80B3 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				A9D529882873840E007D438D /* Equipment.swift */,
+				A9D52986287383A5007D438D /* Personnel.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D5296C28733060007D438D /* AppCoordinator.swift in Sources */,
+				A9A6161E2883550000D453A8 /* PersonnelLoss.swift in Sources */,
+				A9951FE2287C815B001A80B7 /* MilitaryDetailsCell.swift in Sources */,
 				A9951FB62874D97A001A80B7 /* DataManagerContext.swift in Sources */,
 				A9951FC12874DCC9001A80B7 /* AppError.swift in Sources */,
 				A9D5297B2873667A007D438D /* MainCoordinator.swift in Sources */,
@@ -333,7 +388,7 @@
 				A9951FD82878B345001A80B7 /* DetailsCoordinator.swift in Sources */,
 				A9D5295C28732BE3007D438D /* MainViewController.swift in Sources */,
 				A9D52975287365BF007D438D /* Coordinator.swift in Sources */,
-				A9951FC32875BA3B001A80B7 /* OverallResult.swift in Sources */,
+				A9A6161A288348A200D453A8 /* UIColor+Extensions.swift in Sources */,
 				A9951FC82875DDA0001A80B7 /* HeaderView.swift in Sources */,
 				A9951FB82874D9C1001A80B7 /* DataLoader.swift in Sources */,
 				A9951FBC2874DA04001A80B7 /* DataParser.swift in Sources */,
@@ -344,12 +399,17 @@
 				A9951FBA2874D9D1001A80B7 /* DataLoaderContext.swift in Sources */,
 				A9D529892873840E007D438D /* Equipment.swift in Sources */,
 				A9D5298128737977007D438D /* ServiceLocator.swift in Sources */,
+				A9A6161C28834E3700D453A8 /* ComparableLoss.swift in Sources */,
 				A9D5295828732BE3007D438D /* AppDelegate.swift in Sources */,
 				A9951FCF28785621001A80B7 /* Date+Extensions.swift in Sources */,
 				A9D52987287383A5007D438D /* Personnel.swift in Sources */,
+				A9951FE7287F6086001A80B7 /* DetailsDateAdapter.swift in Sources */,
+				A9951FE0287C8139001A80B7 /* DateDetailsCell.swift in Sources */,
 				A9951FC52875DD31001A80B7 /* GridCell.swift in Sources */,
 				A9D52985287382A9007D438D /* DataManager.swift in Sources */,
 				A9D5295A28732BE3007D438D /* SceneDelegate.swift in Sources */,
+				A995200828804FBA001A80B7 /* DetailsDataSource.swift in Sources */,
+				E91389CA2880B57B00DC80B3 /* EquipmentLoss.swift in Sources */,
 				A9951FCD287757F5001A80B7 /* MainSection.swift in Sources */,
 				A9D5297728736662007D438D /* MainViewModel.swift in Sources */,
 				A9951FD42878B32F001A80B7 /* DetailsViewModel.swift in Sources */,

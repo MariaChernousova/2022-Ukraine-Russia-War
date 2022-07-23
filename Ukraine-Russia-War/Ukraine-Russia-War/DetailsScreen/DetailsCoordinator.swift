@@ -11,17 +11,19 @@ class DetailsCoordinator: Coordinator {
     
     let serviceManager: ServiceManager
     let rootViewController: UINavigationController
-    let personnel: Personnel
+    let comparableLoss: ComparableLoss<Personnel>
     
-    init(serviceManager: ServiceManager, rootViewController: UINavigationController, personnel: Personnel) {
+    init(serviceManager: ServiceManager,
+         rootViewController: UINavigationController,
+         comparableLoss: ComparableLoss<Personnel>) {
         self.serviceManager = serviceManager
         self.rootViewController = rootViewController
-        self.personnel = personnel
+        self.comparableLoss = comparableLoss
     }
     
     func start() {
         let model = DetailsModel(serviceManager: serviceManager)
-        let viewModel = DetailsViewModel(model: model, personnel: personnel)
+        let viewModel = DetailsViewModel(model: model, comparableLoss: comparableLoss)
         let viewController = DetailsViewController(viewModel: viewModel)
         
         rootViewController.pushViewController(viewController, animated: true)
